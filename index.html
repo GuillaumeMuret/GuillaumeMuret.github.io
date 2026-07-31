@@ -1,12 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Resume - Start Bootstrap Theme</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <meta name="description" content="CV de Guillaume Muret, ingénieur Android senior (Kotlin, Compose Multiplatform) à Bordeaux." />
+        <meta name="author" content="Guillaume Muret" />
+        <title>Guillaume Muret - Ingénieur Android Senior</title>
+        <link rel="icon" type="image/jpeg" href="assets/img/profile.jpg" />
+        <script>
+            // Applique la langue avant le premier rendu pour éviter un flash FR chez un visiteur EN
+            (function () {
+                var lang;
+                try { lang = localStorage.getItem('lang'); } catch (e) {}
+                if (lang !== 'fr' && lang !== 'en') {
+                    lang = (navigator.language || '').toLowerCase().indexOf('fr') === 0 ? 'fr' : 'en';
+                }
+                document.documentElement.lang = lang;
+            })();
+        </script>
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -14,23 +25,26 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/custom.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Clarence Taylor</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
+                <span class="d-block d-lg-none">Guillaume Muret</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="Guillaume Muret" /></span>
             </a>
+            <button class="btn-lang" id="langToggle" type="button" aria-label="Switch language / Changer de langue">
+                <i class="fas fa-globe"></i> <span id="langToggleLabel">EN</span>
+            </button>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about"><span class="lang-fr">À propos</span><span class="lang-en">About</span></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience"><span class="lang-fr">Expérience</span><span class="lang-en">Experience</span></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education"><span class="lang-fr">Formation</span><span class="lang-en">Education</span></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills"><span class="lang-fr">Compétences</span><span class="lang-en">Skills</span></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certifications">Certifications</a></li>
                 </ul>
             </div>
         </nav>
@@ -43,16 +57,27 @@
                         Guillaume
                         <span class="text-primary">Muret</span>
                     </h1>
-                    <div class="subheading mb-5">
-                        3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
+                    <div class="subheading mb-4">
+                        <span class="lang-fr">Ingénieur Android Senior</span><span class="lang-en">Senior Android Engineer</span>
+                        · Bordeaux, France ·
                         <a href="mailto:guillaume.muret.pro@gmail.com">guillaume.muret.pro@gmail.com</a>
                     </div>
-                    <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+                    <div class="chips mb-5">
+                        <span class="chip"><span class="lang-fr">8+ ans d'expérience</span><span class="lang-en">8+ years of experience</span></span>
+                        <span class="chip">Kotlin · Compose Multiplatform</span>
+                        <span class="chip"><span class="lang-fr">IA · Claude Code</span><span class="lang-en">AI · Claude Code</span></span>
+                        <span class="chip"><span class="lang-fr">Banque · Télécom · Automobile</span><span class="lang-en">Banking · Telecom · Automotive</span></span>
+                        <span class="chip">Remote / Bordeaux</span>
+                    </div>
+                    <p class="lead mb-3 lang-fr">Ingénieur Android senior, je conçois depuis plus de <strong>8 ans</strong> des applications à fort trafic : la banque chez manager.one (<strong>8 marques</strong>), les télécoms chez Orange (<strong>≈ 4 millions d'utilisateurs par mois</strong>) ou encore l'automobile chez Faurecia. Mon périmètre ne s'arrête pas à l'app : CI/CD, backend (Node, Docker, Cloud), Android bas niveau (AOSP / HAL) et écosystème iOS grâce à Compose Multiplatform. De l'idée à la production, je livre de bout en bout.</p>
+                    <p class="lead mb-3 lang-en">Senior Android engineer, I've been building high-traffic apps for over <strong>8 years</strong>: banking at manager.one (<strong>8 brands</strong>), telecom at Orange (<strong>≈ 4 million monthly users</strong>) and automotive at Faurecia. My scope doesn't stop at the app: CI/CD, backend (Node, Docker, Cloud), low-level Android (AOSP / HAL) and the iOS ecosystem thanks to Compose Multiplatform. From idea to production, I deliver end to end.</p>
+                    <p class="lead mb-5">
+                        <span class="lang-fr">Aujourd'hui à Bordeaux, à l'écoute d'opportunités Senior / Lead Android — en remote ou sur place.</span>
+                        <span class="lang-en">Now based in Bordeaux, France, and open to Senior / Lead Android opportunities — remote or on-site.</span>
+                    </p>
                     <div class="social-icons">
-                        <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="social-icon" href="https://www.linkedin.com/in/muretguillaume" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/GuillaumeMuret" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </section>
@@ -60,38 +85,200 @@
             <!-- Experience-->
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
+                    <h2 class="mb-5"><span class="lang-fr">Expérience</span><span class="lang-en">Experience</span></h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Senior Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                            <h3 class="mb-0"><span class="lang-fr">Développeur Android Senior</span><span class="lang-en">Senior Android Developer</span></h3>
+                            <div class="subheading mb-3">manager.one · Paris</div>
+                            <div class="lang-fr">
+                                <p class="mb-2">Au cœur des applications bancaires du groupe — 8 marques propulsées par un socle unique Compose Multiplatform, de la proposition de fonctionnalités au suivi en production :</p>
+                                <ul class="mb-2">
+                                    <li>Conception, développement et tests de nouvelles fonctionnalités, force de proposition sur le produit</li>
+                                    <li>Mise en place de la stratégie de tests screenshot (Roborazzi / ScreenshotBot) sur l'ensemble des marques</li>
+                                    <li>Surveillance de la production, analyse et résolution de bugs — garant de la qualité de l'application</li>
+                                    <li>Amélioration continue des pipelines GitLab CI/CD</li>
+                                    <li>Développement assisté par IA au quotidien : Claude Code intégré au workflow (développement, refactoring, revue de code)</li>
+                                </ul>
+                            </div>
+                            <div class="lang-en">
+                                <p class="mb-2">At the heart of the group's banking apps — 8 brands powered by a single Compose Multiplatform codebase, from feature proposal to production monitoring:</p>
+                                <ul class="mb-2">
+                                    <li>Design, development and testing of new features, with a strong product voice</li>
+                                    <li>Rolled out the screenshot-testing strategy (Roborazzi / ScreenshotBot) across all brands</li>
+                                    <li>Production monitoring, bug analysis and resolution — owner of app quality</li>
+                                    <li>Continuous improvement of the GitLab CI/CD pipelines</li>
+                                    <li>Daily AI-assisted development: Claude Code embedded in the workflow (development, refactoring, code review)</li>
+                                </ul>
+                            </div>
+                            <p class="small text-muted mb-0">Kotlin · Compose Multiplatform · Coroutines / Flow · Koin · Retrofit · GitLab CI/CD · Docker · Claude Code · Proxyman · ScreenshotBot · Figma · Xcode</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"><span class="lang-fr">janvier 2024 - aujourd'hui</span><span class="lang-en">January 2024 - Present</span></span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                            <h3 class="mb-0">Lead Android</h3>
+                            <div class="subheading mb-3">Enedis · Nantes</div>
+                            <div class="lang-fr">
+                                <p class="mb-2">Développement et support des applications du groupe :</p>
+                                <ul class="mb-2">
+                                    <li>Estimation puis intégration de nouvelles fonctionnalités</li>
+                                    <li>Revue et suivi du développement : montée en compétence de l'équipe et qualité de l'application</li>
+                                    <li>Amélioration des processus CI/CD</li>
+                                    <li>Développement et déploiement de microservices middleware</li>
+                                </ul>
+                            </div>
+                            <div class="lang-en">
+                                <p class="mb-2">Development and support of the group's mobile apps:</p>
+                                <ul class="mb-2">
+                                    <li>Estimating and delivering new features</li>
+                                    <li>Code review and development follow-up: team upskilling and app quality</li>
+                                    <li>CI/CD process improvements</li>
+                                    <li>Development and deployment of middleware microservices</li>
+                                </ul>
+                            </div>
+                            <p class="small text-muted mb-0">Kotlin · Compose · Coroutines / Flow · Hilt / Koin · Room · Ktor / Retrofit · Clean Archi / MVVM · GitLab CI/CD · AWS · Artifactory</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">December 2011 - March 2013</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"><span class="lang-fr">janvier 2023 - janvier 2024</span><span class="lang-en">January 2023 - January 2024</span></span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Junior Web Designer</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
+                            <h3 class="mb-0"><span class="lang-fr">Ingénieur Android</span><span class="lang-en">Android Engineer</span></h3>
+                            <div class="subheading mb-3">Orange · Bordeaux</div>
+                            <div class="lang-fr">
+                                <p class="mb-2">Développement et gestion des applications « Orange Et Moi » et « MySosh » (4 millions d'utilisateurs / mois) :</p>
+                                <ul class="mb-2">
+                                    <li>Chiffrage et intégration de nouvelles fonctionnalités</li>
+                                    <li>Monitoring de la production et réduction du taux de crash</li>
+                                </ul>
+                            </div>
+                            <div class="lang-en">
+                                <p class="mb-2">Development of the "Orange Et Moi" and "MySosh" apps (4 million users/month):</p>
+                                <ul class="mb-2">
+                                    <li>Estimating and delivering new features</li>
+                                    <li>Production monitoring and crash-rate reduction</li>
+                                </ul>
+                            </div>
+                            <p class="small text-muted mb-0">Kotlin · Compose · Coroutines · LiveData · Hilt · Room · Retrofit · Glide · Clean Archi / MVVM · GitLab CI/CD · Docker · CloudFoundry</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2010 - December 2011</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"><span class="lang-fr">mai 2021 - janvier 2023</span><span class="lang-en">May 2021 - January 2023</span></span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><span class="lang-fr">Ingénieur Android</span><span class="lang-en">Android Engineer</span></h3>
+                            <div class="subheading mb-3">Faurecia · <span class="lang-fr">Région parisienne</span><span class="lang-en">Paris area</span></div>
+                            <div class="lang-fr">
+                                <p class="mb-2">Développement de services et d'IHM sous Android Automotive pour une expérience embarquée connectée, innovante et intuitive :</p>
+                                <ul class="mb-2">
+                                    <li>Intégration des démonstrateurs Android (AOSP)</li>
+                                    <li>Développement d'applications à travers les différentes couches d'Android (Application / HAL / Driver)</li>
+                                    <li>Rédaction de documents techniques</li>
+                                </ul>
+                            </div>
+                            <div class="lang-en">
+                                <p class="mb-2">Development of services and HMIs on Android Automotive, delivering an innovative and intuitive connected in-car experience:</p>
+                                <ul class="mb-2">
+                                    <li>Integration of Android demonstrators (AOSP)</li>
+                                    <li>App development across Android layers (Application / HAL / Driver)</li>
+                                    <li>Technical documentation</li>
+                                </ul>
+                            </div>
+                            <p class="small text-muted mb-0">Java · C · C++ · Python · Bash · AOSP · Git / Repo</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><span class="lang-fr">août 2018 - avril 2021</span><span class="lang-en">August 2018 - April 2021</span></span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><span class="lang-fr">Ingénieur logiciel - Frein de stationnement automobile</span><span class="lang-en">Software Engineer - Automotive Parking Brake</span></h3>
+                            <div class="subheading mb-3">Chassis Brakes International · <span class="lang-fr">Région parisienne</span><span class="lang-en">Paris area</span></div>
+                            <div class="lang-fr">
+                                <p class="mb-2">Amélioration du frein de stationnement à disque APB-MI (Automated Parking Brake - Motor Integrated) :</p>
+                                <ul class="mb-0">
+                                    <li>Optimisation logicielle du frein de parking</li>
+                                    <li>Rédaction des exigences sous Doors (SWE1, SWE2, SWE3)</li>
+                                    <li>Application des standards ISO 26262 et ASPICE (niveau 2)</li>
+                                </ul>
+                            </div>
+                            <div class="lang-en">
+                                <p class="mb-2">Improvement of the APB-MI disc parking brake (Automated Parking Brake - Motor Integrated):</p>
+                                <ul class="mb-0">
+                                    <li>Parking-brake software optimization</li>
+                                    <li>Requirements writing in Doors (SWE1, SWE2, SWE3)</li>
+                                    <li>ISO 26262 and ASPICE (level 2) compliance</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><span class="lang-fr">février 2018 - août 2018</span><span class="lang-en">February 2018 - August 2018</span></span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><span class="lang-fr">Développeur Android</span><span class="lang-en">Android Developer</span></h3>
+                            <div class="subheading mb-3">FFRS - Fédération Française de Roller et Skateboard · Angers</div>
+                            <div class="lang-fr">
+                                <p class="mb-2">Système de suivi des mouvements et positions des joueurs de l'équipe de France de roller hockey en salle :</p>
+                                <ul class="mb-2">
+                                    <li>Rédaction du cahier des charges et de la spécification</li>
+                                    <li>Conception du système</li>
+                                    <li>Réseau RFID (Ultra Wide Band) pour la position précise des joueurs</li>
+                                    <li>Traitement des données et affichage sur une interface Android</li>
+                                </ul>
+                                <p class="mb-0">Projet sur GitHub : <a href="https://github.com/GuillaumeMuret/sportif_tracker" target="_blank" rel="noopener">sportif_tracker</a></p>
+                            </div>
+                            <div class="lang-en">
+                                <p class="mb-2">Indoor tracking system for the French national roller hockey team (players' movements and positions):</p>
+                                <ul class="mb-2">
+                                    <li>Requirements and specification writing</li>
+                                    <li>System design</li>
+                                    <li>RFID network (Ultra Wide Band) for precise player positioning</li>
+                                    <li>Data processing and display in an Android app</li>
+                                </ul>
+                                <p class="mb-0">Project on GitHub: <a href="https://github.com/GuillaumeMuret/sportif_tracker" target="_blank" rel="noopener">sportif_tracker</a></p>
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><span class="lang-fr">octobre 2017 - février 2018</span><span class="lang-en">October 2017 - February 2018</span></span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><span class="lang-fr">Développeur Android</span><span class="lang-en">Android Developer</span></h3>
+                            <div class="subheading mb-3">Comptoirs · <span class="lang-fr">Région parisienne</span><span class="lang-en">Paris area</span></div>
+                            <div class="lang-fr">
+                                <p class="mb-2">Application Android d'analyse de conduite permettant d'obtenir une réduction sur son assurance auto : trajets détectés automatiquement, statistiques quotidiennes et mensuelles, style de conduite, localisation du véhicule garé.</p>
+                                <ul class="mb-0">
+                                    <li>Gestion des capteurs (accéléromètre, boussole, GPS)</li>
+                                    <li>Connexion sécurisée (certificats SSL/TLS, gateway) et API REST avec Retrofit</li>
+                                    <li>Auto-détection de début et fin de trajet</li>
+                                    <li>Appel d'assistance d'urgence, essai gratuit, multi-utilisateur</li>
+                                </ul>
+                            </div>
+                            <div class="lang-en">
+                                <p class="mb-2">Android driving-analysis app earning users a discount on their car insurance: automatic trip detection, daily and monthly statistics, driving style, parked-car locator.</p>
+                                <ul class="mb-0">
+                                    <li>Sensor handling (accelerometer, compass, GPS)</li>
+                                    <li>Secured connection (SSL/TLS certificates, gateway) and REST APIs with Retrofit</li>
+                                    <li>Automatic trip start/stop detection</li>
+                                    <li>Emergency assistance call, free trial, multi-user support</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><span class="lang-fr">juin 2017 - septembre 2017</span><span class="lang-en">June 2017 - September 2017</span></span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Design Intern</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+                            <h3 class="mb-0"><span class="lang-fr">Développeur logiciel</span><span class="lang-en">Software Developer</span></h3>
+                            <div class="subheading mb-3">Autoliv · Cergy</div>
+                            <div class="lang-fr">
+                                <ul class="mb-0">
+                                    <li>IHM Java de génération de code embarqué (JSON, C, arxml, binaire Motorola « *.S00 ») ; rédaction d'un plan de test et d'une spécification</li>
+                                    <li>IHM JScript de pilotage d'une LED via trames LIN (changement de couleur, clignotement)</li>
+                                </ul>
+                            </div>
+                            <div class="lang-en">
+                                <ul class="mb-0">
+                                    <li>Java GUI generating embedded code (JSON, C, arxml, Motorola "*.S00" binaries); test plan and specification writing</li>
+                                    <li>JScript GUI driving a LED over LIN frames (color change, blinking)</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"><span class="lang-fr">juin 2016 - août 2016</span><span class="lang-en">June 2016 - August 2016</span></span></div>
                     </div>
                 </div>
             </section>
@@ -99,23 +286,38 @@
             <!-- Education-->
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
+                    <h2 class="mb-5"><span class="lang-fr">Formation</span><span class="lang-en">Education</span></h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">University of Colorado Boulder</h3>
-                            <div class="subheading mb-3">Bachelor of Science</div>
-                            <div>Computer Science - Web Development Track</div>
-                            <p>GPA: 3.23</p>
+                            <h3 class="mb-0">ESEO Angers</h3>
+                            <div class="subheading mb-3"><span class="lang-fr">Diplôme d'ingénieur</span><span class="lang-en">Master's degree in Engineering</span></div>
+                            <div><span class="lang-fr">Informatique et électronique</span><span class="lang-en">Computer science and electronics</span></div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">2012 - 2018</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">ESSCA <span class="lang-fr">École de management</span><span class="lang-en">School of Management</span></h3>
+                            <div class="subheading mb-3"><span class="lang-fr">Bi-diplôme Ingénieur - Manager</span><span class="lang-en">Dual degree Engineer - Manager</span></div>
+                            <div><span class="lang-fr">Management de projet</span><span class="lang-en">Project management</span></div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2016 - 2017</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">ESAI Shanghai</h3>
+                            <div class="subheading mb-3"><span class="lang-fr">Semestre d'échange</span><span class="lang-en">Exchange semester</span></div>
+                            <div><span class="lang-fr">Informatique (projet en langage C), culture et business chinois, mandarin</span><span class="lang-en">Computer science (C language project), Chinese culture and business, Mandarin</span></div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2014</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">James Buchanan High School</h3>
-                            <div class="subheading mb-3">Technology Magnet Program</div>
-                            <p>GPA: 3.56</p>
+                            <h3 class="mb-0">University of Plymouth</h3>
+                            <div class="subheading mb-3"><span class="lang-fr">Semestre d'échange</span><span class="lang-en">Exchange semester</span></div>
+                            <div>Software and Hardware</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2002 - May 2006</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">2013</span></div>
                     </div>
                 </div>
             </section>
@@ -123,95 +325,82 @@
             <!-- Skills-->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <h2 class="mb-5"><span class="lang-fr">Compétences</span><span class="lang-en">Skills</span></h2>
+                    <div class="subheading mb-3"><span class="lang-fr">Langages &amp; frameworks</span><span class="lang-en">Languages &amp; frameworks</span></div>
+                    <p>Kotlin · Compose Multiplatform · Java · Coroutines / Flow · Koin / Hilt · Retrofit / Ktor · Room / SQLDelight · Clean Architecture / MVVM · Node · Bash · Groovy</p>
+                    <div class="subheading mb-3"><span class="lang-fr">Outils &amp; plateformes</span><span class="lang-en">Tools &amp; platforms</span></div>
                     <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
+                        <li class="list-inline-item" title="Android"><i class="fab fa-android"></i></li>
+                        <li class="list-inline-item" title="Java"><i class="fab fa-java"></i></li>
+                        <li class="list-inline-item" title="iOS / Xcode"><i class="fab fa-apple"></i></li>
+                        <li class="list-inline-item" title="GitLab CI/CD"><i class="fab fa-gitlab"></i></li>
+                        <li class="list-inline-item" title="Git"><i class="fab fa-git-alt"></i></li>
+                        <li class="list-inline-item" title="Docker"><i class="fab fa-docker"></i></li>
+                        <li class="list-inline-item" title="Node.js"><i class="fab fa-node-js"></i></li>
+                        <li class="list-inline-item" title="AWS"><i class="fab fa-aws"></i></li>
+                        <li class="list-inline-item" title="Python"><i class="fab fa-python"></i></li>
+                        <li class="list-inline-item" title="Figma"><i class="fab fa-figma"></i></li>
+                        <li class="list-inline-item" title="Jira"><i class="fab fa-jira"></i></li>
+                        <li class="list-inline-item" title="Confluence"><i class="fab fa-confluence"></i></li>
                     </ul>
-                    <div class="subheading mb-3">Workflow</div>
+                    <div class="subheading mb-3"><span class="lang-fr">Méthodes de travail</span><span class="lang-en">Workflow</span></div>
                     <ul class="fa-ul mb-0">
                         <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
+                            <span class="fa-li"><i class="fas fa-robot"></i></span>
+                            <span class="lang-fr">Développement assisté par IA : Claude Code au quotidien (notamment chez manager.one)</span><span class="lang-en">AI-assisted development: Claude Code daily (notably at manager.one)</span>
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
+                            Clean Architecture / MVVM
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
+                            <span class="lang-fr">CI/CD GitLab (build, tests, déploiement)</span><span class="lang-en">GitLab CI/CD (build, tests, deployment)</span>
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
+                            <span class="lang-fr">Tests screenshot (Roborazzi / ScreenshotBot)</span><span class="lang-en">Screenshot testing (Roborazzi / ScreenshotBot)</span>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <span class="lang-fr">Surveillance de la production &amp; réduction du taux de crash</span><span class="lang-en">Production monitoring &amp; crash-rate reduction</span>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <span class="lang-fr">Revue de code &amp; montée en compétence de l'équipe</span><span class="lang-en">Code review &amp; team upskilling</span>
                         </li>
                     </ul>
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
+            <!-- Certifications-->
+            <section class="resume-section" id="certifications">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-                    <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Awards-->
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
+                    <h2 class="mb-5">Certifications</h2>
                     <ul class="fa-ul mb-0">
                         <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Google Analytics Certified Developer
+                            <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
+                            <span class="lang-fr">ISO 27001 - Sécurité de l'information</span><span class="lang-en">ISO 27001 - Information security</span>
                         </li>
                         <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Mobile Web Specialist - Google Certification
+                            <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
+                            <span class="lang-fr">ISO 26262 - Sécurité fonctionnelle automobile</span><span class="lang-en">ISO 26262 - Automotive functional safety</span>
                         </li>
                         <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
+                            <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
+                            <span class="lang-fr">SST - Sauveteur Secouriste du Travail</span><span class="lang-en">SST - Workplace first aid certification</span>
                         </li>
                         <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
+                            <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
+                            <span class="lang-fr">PSC1 - Formation aux gestes de premiers secours</span><span class="lang-en">PSC1 - First aid certification</span>
                         </li>
                         <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2
-                            <sup>nd</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2008
+                            <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
+                            <span class="lang-fr">Certificat Voltaire</span><span class="lang-en">Voltaire Certificate (French language proficiency)</span>
                         </li>
                         <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - James Buchanan High School - Hackathon 2006
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            3
-                            <sup>rd</sup>
-                            Place - James Buchanan High School - Hackathon 2005
+                            <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
+                            <span class="lang-fr">HSK niveau 2 - Mandarin</span><span class="lang-en">HSK Level 2 - Mandarin Chinese</span>
                         </li>
                     </ul>
                 </div>

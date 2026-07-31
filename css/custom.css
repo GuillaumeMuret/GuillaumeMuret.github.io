@@ -1,0 +1,118 @@
+/* Bascule FR/EN : la langue active est portée par l'attribut lang de <html> */
+html[lang="fr"] .lang-en {
+  display: none !important;
+}
+html[lang="en"] .lang-fr {
+  display: none !important;
+}
+
+.btn-lang {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #fff;
+  border-radius: 2rem;
+  padding: 0.25rem 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: 0.75rem;
+}
+.btn-lang:hover,
+.btn-lang:focus {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  #sideNav .btn-lang {
+    margin: 1rem auto 0;
+  }
+}
+
+/* Badges de synthèse (section À propos) */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.chip {
+  display: inline-block;
+  padding: 0.35rem 0.9rem;
+  border-radius: 2rem;
+  background: rgba(189, 93, 56, 0.1);
+  color: #bd5d38;
+  font-weight: 800;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+/* Easter egg (5 clics rapides sur la photo) */
+#sideNav .navbar-brand {
+  user-select: none;
+}
+#easterEgg {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: rgba(33, 37, 41, 0.85);
+  overflow: hidden;
+  cursor: pointer;
+}
+#easterEgg .egg-drop {
+  position: absolute;
+  top: -3rem;
+  animation: egg-fall linear infinite;
+}
+@keyframes egg-fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
+#easterEgg .egg-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem 2.5rem;
+  text-align: center;
+  max-width: min(26rem, 85vw);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4);
+  animation: egg-pop 0.4s ease-out;
+}
+@keyframes egg-pop {
+  from {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+#easterEgg .egg-emoji {
+  font-size: 3rem;
+}
+#easterEgg .egg-hint {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+.egg-spin {
+  animation: egg-spin 1s ease-in-out;
+}
+@keyframes egg-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  #easterEgg .egg-drop,
+  #easterEgg .egg-card,
+  .egg-spin {
+    animation: none;
+  }
+}
