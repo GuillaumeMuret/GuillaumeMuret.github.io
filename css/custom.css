@@ -49,6 +49,26 @@ html[lang="en"] .lang-fr {
   letter-spacing: 0.05rem;
 }
 
+/* Captures d'écran des projets */
+.project-shots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.project-shots img {
+  width: calc((100% - 2rem) / 3);
+  max-width: 180px;
+  height: auto;
+  border-radius: 1rem;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
+}
+.project-shots.landscape img {
+  width: calc((100% - 1rem) / 2);
+  max-width: 360px;
+  border-radius: 0.5rem;
+}
+
 /* Easter egg (5 clics rapides sur la photo) */
 #sideNav .navbar-brand {
   user-select: none;

@@ -6,6 +6,15 @@
         <meta name="description" content="CV de Guillaume Muret, ingénieur Android senior (Kotlin, Compose Multiplatform) à Bordeaux." />
         <meta name="author" content="Guillaume Muret" />
         <title>Guillaume Muret - Ingénieur Android Senior</title>
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://guillaumemuret.github.io/" />
+        <meta property="og:title" content="Guillaume Muret - Ingénieur Android Senior" />
+        <meta property="og:description" content="Kotlin, Compose Multiplatform et IA générative. Expériences, projets et captures d'applications." />
+        <meta property="og:image" content="https://guillaumemuret.github.io/assets/img/og-cover.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="627" />
+        <meta property="og:locale" content="fr_FR" />
+        <meta name="twitter:card" content="summary_large_image" />
         <link rel="icon" type="image/jpeg" href="assets/img/profile.jpg" />
         <script>
             // Applique la langue avant le premier rendu pour éviter un flash FR chez un visiteur EN
@@ -42,6 +51,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about"><span class="lang-fr">À propos</span><span class="lang-en">About</span></a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience"><span class="lang-fr">Expérience</span><span class="lang-en">Experience</span></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects"><span class="lang-fr">Projets</span><span class="lang-en">Projects</span></a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education"><span class="lang-fr">Formation</span><span class="lang-en">Education</span></a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills"><span class="lang-fr">Compétences</span><span class="lang-en">Skills</span></a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certifications">Certifications</a></li>
@@ -69,8 +79,8 @@
                         <span class="chip"><span class="lang-fr">Banque · Télécom · Automobile</span><span class="lang-en">Banking · Telecom · Automotive</span></span>
                         <span class="chip">Remote / Bordeaux</span>
                     </div>
-                    <p class="lead mb-3 lang-fr">Ingénieur Android senior, je conçois depuis plus de <strong>8 ans</strong> des applications à fort trafic : la banque chez manager.one (<strong>8 marques</strong>), les télécoms chez Orange (<strong>≈ 4 millions d'utilisateurs par mois</strong>) ou encore l'automobile chez Faurecia. Mon périmètre ne s'arrête pas à l'app : CI/CD, backend (Node, Docker, Cloud), Android bas niveau (AOSP / HAL) et écosystème iOS grâce à Compose Multiplatform. De l'idée à la production, je livre de bout en bout.</p>
-                    <p class="lead mb-3 lang-en">Senior Android engineer, I've been building high-traffic apps for over <strong>8 years</strong>: banking at manager.one (<strong>8 brands</strong>), telecom at Orange (<strong>≈ 4 million monthly users</strong>) and automotive at Faurecia. My scope doesn't stop at the app: CI/CD, backend (Node, Docker, Cloud), low-level Android (AOSP / HAL) and the iOS ecosystem thanks to Compose Multiplatform. From idea to production, I deliver end to end.</p>
+                    <p class="lead mb-3 lang-fr">Ingénieur Android senior, je conçois depuis plus de <strong>8 ans</strong> des applications à fort trafic : la banque chez manager.one (<strong>8 marques</strong>), les télécoms pour Orange en tant que consultant Niji (<strong>≈ 4 millions d'utilisateurs par mois</strong>) ou encore l'automobile chez Faurecia. Mon périmètre ne s'arrête pas à l'app : CI/CD, backend (Node, Docker, Cloud), Android bas niveau (AOSP / HAL) et écosystème iOS grâce à Compose Multiplatform. Au quotidien, je développe avec l'IA : j'ai co-construit l'outillage Claude Code de l'équipe Android de manager.one. J'interviens aussi en freelance, sur des missions ponctuelles, chez Miicom : MCO d'applications web et mobiles, avant-vente et IA. De l'idée à la production, je livre de bout en bout.</p>
+                    <p class="lead mb-3 lang-en">Senior Android engineer, I've been building high-traffic apps for over <strong>8 years</strong>: banking at manager.one (<strong>8 brands</strong>), telecom for Orange as a Niji consultant (<strong>≈ 4 million monthly users</strong>) and automotive at Faurecia. My scope doesn't stop at the app: CI/CD, backend (Node, Docker, Cloud), low-level Android (AOSP / HAL) and the iOS ecosystem thanks to Compose Multiplatform. I build software with AI every day: I co-built the Claude Code tooling of manager.one's Android team. I also take on occasional freelance missions at Miicom: maintenance and operations of web and mobile apps, pre-sales and AI. From idea to production, I deliver end to end.</p>
                     <p class="lead mb-5">
                         <span class="lang-fr">Aujourd'hui à Bordeaux, à l'écoute d'opportunités Senior / Lead Android — en remote ou sur place.</span>
                         <span class="lang-en">Now based in Bordeaux, France, and open to Senior / Lead Android opportunities — remote or on-site.</span>
@@ -89,7 +99,7 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0"><span class="lang-fr">Développeur Android Senior</span><span class="lang-en">Senior Android Developer</span></h3>
-                            <div class="subheading mb-3">manager.one · Paris</div>
+                            <div class="subheading mb-3">manager.one · <span class="lang-fr">Bordeaux · Full remote</span><span class="lang-en">Bordeaux · Fully remote</span></div>
                             <div class="lang-fr">
                                 <p class="mb-2">Au cœur des applications bancaires du groupe — 8 marques propulsées par un socle unique Compose Multiplatform, de la proposition de fonctionnalités au suivi en production :</p>
                                 <ul class="mb-2">
@@ -97,7 +107,9 @@
                                     <li>Mise en place de la stratégie de tests screenshot (Roborazzi / ScreenshotBot) sur l'ensemble des marques</li>
                                     <li>Surveillance de la production, analyse et résolution de bugs — garant de la qualité de l'application</li>
                                     <li>Amélioration continue des pipelines GitLab CI/CD</li>
-                                    <li>Développement assisté par IA au quotidien : Claude Code intégré au workflow (développement, refactoring, revue de code)</li>
+                                    <li>IA générative : co-construction de l'outillage Claude Code de l'équipe Android (skills, règles, hooks partagés dans le dépôt)</li>
+                                    <li>Création de skills Claude Code pour migrer un écran vers Compose, implémenter une fonctionnalité depuis une issue GitLab et sa maquette Figma, vérifier la conformité au design, mettre à jour les assets de chaque marque et analyser les échecs de tests fonctionnels en CI</li>
+                                    <li>Revue de merge request multi-agents avec contre-vérification indépendante de chaque remontée, rebase et découpage de commits automatisés</li>
                                 </ul>
                             </div>
                             <div class="lang-en">
@@ -107,7 +119,9 @@
                                     <li>Rolled out the screenshot-testing strategy (Roborazzi / ScreenshotBot) across all brands</li>
                                     <li>Production monitoring, bug analysis and resolution — owner of app quality</li>
                                     <li>Continuous improvement of the GitLab CI/CD pipelines</li>
-                                    <li>Daily AI-assisted development: Claude Code embedded in the workflow (development, refactoring, code review)</li>
+                                    <li>Generative AI: co-built the Android team's Claude Code tooling (skills, rules and hooks shared in the repository)</li>
+                                    <li>Built Claude Code skills to migrate a screen to Compose, implement a feature from a GitLab issue and its Figma design, check design compliance, update each brand's assets and analyze functional-test failures in CI</li>
+                                    <li>Multi-agent merge request review with independent cross-checking of every finding, automated rebase and commit splitting</li>
                                 </ul>
                             </div>
                             <p class="small text-muted mb-0">Kotlin · Compose Multiplatform · Coroutines / Flow · Koin · Retrofit · GitLab CI/CD · Docker · Claude Code · Proxyman · ScreenshotBot · Figma · Xcode</p>
@@ -116,24 +130,24 @@
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Lead Android</h3>
-                            <div class="subheading mb-3">Enedis · Nantes</div>
+                            <h3 class="mb-0"><span class="lang-fr">Lead Android – Mission Enedis</span><span class="lang-en">Lead Android – Enedis assignment</span></h3>
+                            <div class="subheading mb-3">Niji · Bordeaux · <span class="lang-fr">À distance</span><span class="lang-en">Remote</span></div>
                             <div class="lang-fr">
-                                <p class="mb-2">Développement et support des applications du groupe :</p>
+                                <p class="mb-2">Consultant Niji, en mission chez Enedis comme Lead Android sur les applications mobiles du groupe :</p>
                                 <ul class="mb-2">
-                                    <li>Estimation puis intégration de nouvelles fonctionnalités</li>
-                                    <li>Revue et suivi du développement : montée en compétence de l'équipe et qualité de l'application</li>
+                                    <li>Estimation et intégration de nouvelles fonctionnalités</li>
+                                    <li>Revue de code et accompagnement de l'équipe dans sa montée en compétence</li>
                                     <li>Amélioration des processus CI/CD</li>
-                                    <li>Développement et déploiement de microservices middleware</li>
+                                    <li>Développement et déploiement de microservices middleware (Node)</li>
                                 </ul>
                             </div>
                             <div class="lang-en">
-                                <p class="mb-2">Development and support of the group's mobile apps:</p>
+                                <p class="mb-2">Niji consultant, assigned to Enedis as Lead Android on the group's mobile apps:</p>
                                 <ul class="mb-2">
                                     <li>Estimating and delivering new features</li>
-                                    <li>Code review and development follow-up: team upskilling and app quality</li>
+                                    <li>Code review and coaching to help the team grow its skills</li>
                                     <li>CI/CD process improvements</li>
-                                    <li>Development and deployment of middleware microservices</li>
+                                    <li>Development and deployment of middleware microservices (Node)</li>
                                 </ul>
                             </div>
                             <p class="small text-muted mb-0">Kotlin · Compose · Coroutines / Flow · Hilt / Koin · Room · Ktor / Retrofit · Clean Archi / MVVM · GitLab CI/CD · AWS · Artifactory</p>
@@ -142,17 +156,17 @@
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0"><span class="lang-fr">Ingénieur Android</span><span class="lang-en">Android Engineer</span></h3>
-                            <div class="subheading mb-3">Orange · Bordeaux</div>
+                            <h3 class="mb-0"><span class="lang-fr">Développeur Android – Mission Orange</span><span class="lang-en">Android Developer – Orange assignment</span></h3>
+                            <div class="subheading mb-3">Niji · Bordeaux</div>
                             <div class="lang-fr">
-                                <p class="mb-2">Développement et gestion des applications « Orange Et Moi » et « MySosh » (4 millions d'utilisateurs / mois) :</p>
+                                <p class="mb-2">Consultant Niji, en mission chez Orange sur les applications « Orange et moi » et « MySosh » (≈ 4 millions d'utilisateurs / mois) :</p>
                                 <ul class="mb-2">
                                     <li>Chiffrage et intégration de nouvelles fonctionnalités</li>
                                     <li>Monitoring de la production et réduction du taux de crash</li>
                                 </ul>
                             </div>
                             <div class="lang-en">
-                                <p class="mb-2">Development of the "Orange Et Moi" and "MySosh" apps (4 million users/month):</p>
+                                <p class="mb-2">Niji consultant, assigned to Orange on the "Orange et moi" and "MySosh" apps (≈ 4 million users/month):</p>
                                 <ul class="mb-2">
                                     <li>Estimating and delivering new features</li>
                                     <li>Production monitoring and crash-rate reduction</li>
@@ -164,10 +178,48 @@
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
+                            <h3 class="mb-0"><span class="lang-fr">Ingénieur logiciel full stack · MCO, avant-vente et IA</span><span class="lang-en">Full-stack Software Engineer · Operations, Pre-sales &amp; AI</span></h3>
+                            <div class="subheading mb-3">Miicom · Bordeaux · Freelance</div>
+                            <div class="lang-fr">
+                                <p class="mb-2">Missions ponctuelles pour <a href="https://www.miicom.fr/a-propos" target="_blank" rel="noopener">Miicom</a>, studio de développement bordelais :</p>
+                                <ul class="mb-0">
+                                    <li>MCO des applications web et mobiles des clients : suivi de production, correctifs et mises à jour pour les garder en ligne, à jour et sécurisées</li>
+                                    <li>Avant-vente : qualification de prospects, démonstrations produit et propositions commerciales sur mesure</li>
+                                    <li>IA appliquée à l'avant-vente avec Claude Code : analyse de la présence web des prospects, choix de la solution et des références adaptées, mails d'accroche personnalisés, génération des offres commerciales PDF au format Miicom</li>
+                                </ul>
+                            </div>
+                            <div class="lang-en">
+                                <p class="mb-2">Occasional missions for <a href="https://www.miicom.fr/a-propos" target="_blank" rel="noopener">Miicom</a>, a Bordeaux-based development studio:</p>
+                                <ul class="mb-0">
+                                    <li>Maintenance and operations (MCO) of clients' web and mobile apps: production monitoring, fixes and updates to keep them online, up to date and secure</li>
+                                    <li>Pre-sales: prospect qualification, product demos and tailored commercial proposals</li>
+                                    <li>AI applied to pre-sales with Claude Code: analysis of prospects' web presence, matching solution and references, personalized outreach emails, generation of PDF commercial proposals in Miicom's format</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><span class="lang-fr">2024 - aujourd'hui</span><span class="lang-en">2024 - Present</span></span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><span class="lang-fr">Formateur Git</span><span class="lang-en">Git Trainer</span></h3>
+                            <div class="subheading mb-3">ECV · Bordeaux · Freelance</div>
+                            <div class="lang-fr">
+                                <p class="mb-2">Missions ponctuelles en 2023, 2024 et 2025 : formation des étudiants de l'ECV Bordeaux à l'utilisation de Git (gestion de versions et travail collaboratif).</p>
+                                <p class="mb-0">Exemple de TP noté : <a href="https://github.com/GuillaumeMuret/EcvGit_2024M1" target="_blank" rel="noopener">EcvGit_2024M1</a></p>
+                            </div>
+                            <div class="lang-en">
+                                <p class="mb-2">Occasional missions in 2023, 2024 and 2025: training ECV Bordeaux students to use Git (version control and collaborative work).</p>
+                                <p class="mb-0">Sample graded lab: <a href="https://github.com/GuillaumeMuret/EcvGit_2024M1" target="_blank" rel="noopener">EcvGit_2024M1</a></p>
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2023 - 2025</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
                             <h3 class="mb-0"><span class="lang-fr">Ingénieur Android</span><span class="lang-en">Android Engineer</span></h3>
                             <div class="subheading mb-3">Faurecia · <span class="lang-fr">Région parisienne</span><span class="lang-en">Paris area</span></div>
                             <div class="lang-fr">
-                                <p class="mb-2">Développement de services et d'IHM sous Android Automotive pour une expérience embarquée connectée, innovante et intuitive :</p>
+                                <p class="mb-2">Parrot Automotive, devenu Parrot Faurecia Automotive puis Faurecia Clarion Electronics. Développement de services et d'IHM sous Android Automotive pour une expérience embarquée connectée, innovante et intuitive :</p>
                                 <ul class="mb-2">
                                     <li>Intégration des démonstrateurs Android (AOSP)</li>
                                     <li>Développement d'applications à travers les différentes couches d'Android (Application / HAL / Driver)</li>
@@ -175,7 +227,7 @@
                                 </ul>
                             </div>
                             <div class="lang-en">
-                                <p class="mb-2">Development of services and HMIs on Android Automotive, delivering an innovative and intuitive connected in-car experience:</p>
+                                <p class="mb-2">Parrot Automotive, later renamed Parrot Faurecia Automotive, then Faurecia Clarion Electronics. Development of services and HMIs on Android Automotive, delivering an innovative and intuitive connected in-car experience:</p>
                                 <ul class="mb-2">
                                     <li>Integration of Android demonstrators (AOSP)</li>
                                     <li>App development across Android layers (Application / HAL / Driver)</li>
@@ -189,7 +241,7 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0"><span class="lang-fr">Ingénieur logiciel - Frein de stationnement automobile</span><span class="lang-en">Software Engineer - Automotive Parking Brake</span></h3>
-                            <div class="subheading mb-3">Chassis Brakes International · <span class="lang-fr">Région parisienne</span><span class="lang-en">Paris area</span></div>
+                            <div class="subheading mb-3">Chassis Brakes International · <span class="lang-fr">Région parisienne · Stage de fin d'études</span><span class="lang-en">Paris area · Final-year internship</span></div>
                             <div class="lang-fr">
                                 <p class="mb-2">Amélioration du frein de stationnement à disque APB-MI (Automated Parking Brake - Motor Integrated) :</p>
                                 <ul class="mb-0">
@@ -211,10 +263,10 @@
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0"><span class="lang-fr">Développeur Android</span><span class="lang-en">Android Developer</span></h3>
+                            <h3 class="mb-0"><span class="lang-fr">Projet de fin d'études – Développeur Android</span><span class="lang-en">Final-year project – Android Developer</span></h3>
                             <div class="subheading mb-3">FFRS - Fédération Française de Roller et Skateboard · Angers</div>
                             <div class="lang-fr">
-                                <p class="mb-2">Système de suivi des mouvements et positions des joueurs de l'équipe de France de roller hockey en salle :</p>
+                                <p class="mb-2">Projet de fin d'études ESEO, réalisé pour la FFRS : système de suivi des mouvements et positions des joueurs de l'équipe de France de roller hockey en salle :</p>
                                 <ul class="mb-2">
                                     <li>Rédaction du cahier des charges et de la spécification</li>
                                     <li>Conception du système</li>
@@ -224,7 +276,7 @@
                                 <p class="mb-0">Projet sur GitHub : <a href="https://github.com/GuillaumeMuret/sportif_tracker" target="_blank" rel="noopener">sportif_tracker</a></p>
                             </div>
                             <div class="lang-en">
-                                <p class="mb-2">Indoor tracking system for the French national roller hockey team (players' movements and positions):</p>
+                                <p class="mb-2">ESEO final-year engineering project, carried out for the FFRS: indoor tracking system for the French national roller hockey team (players' movements and positions):</p>
                                 <ul class="mb-2">
                                     <li>Requirements and specification writing</li>
                                     <li>System design</li>
@@ -239,23 +291,21 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0"><span class="lang-fr">Développeur Android</span><span class="lang-en">Android Developer</span></h3>
-                            <div class="subheading mb-3">Comptoirs · <span class="lang-fr">Région parisienne</span><span class="lang-en">Paris area</span></div>
+                            <div class="subheading mb-3">Comptoirs · Paris · <span class="lang-fr">CDD</span><span class="lang-en">Fixed-term contract</span></div>
                             <div class="lang-fr">
-                                <p class="mb-2">Application Android d'analyse de conduite permettant d'obtenir une réduction sur son assurance auto : trajets détectés automatiquement, statistiques quotidiennes et mensuelles, style de conduite, localisation du véhicule garé.</p>
+                                <p class="mb-2">Application Android « Allianz Conduite connectée » : analyse du style de conduite pour obtenir une réduction sur l'assurance auto.</p>
                                 <ul class="mb-0">
-                                    <li>Gestion des capteurs (accéléromètre, boussole, GPS)</li>
-                                    <li>Connexion sécurisée (certificats SSL/TLS, gateway) et API REST avec Retrofit</li>
-                                    <li>Auto-détection de début et fin de trajet</li>
-                                    <li>Appel d'assistance d'urgence, essai gratuit, multi-utilisateur</li>
+                                    <li>Détection automatique des trajets via les capteurs (GPS, accéléromètre, boussole)</li>
+                                    <li>Intégration des API REST (Retrofit) et sécurisation des échanges (certificats SSL/TLS)</li>
+                                    <li>Fonctionnalités clés : statistiques de conduite, appel d'assistance d'urgence, localisation du véhicule, multi-utilisateur</li>
                                 </ul>
                             </div>
                             <div class="lang-en">
-                                <p class="mb-2">Android driving-analysis app earning users a discount on their car insurance: automatic trip detection, daily and monthly statistics, driving style, parked-car locator.</p>
+                                <p class="mb-2">Android app "Allianz Conduite connectée": driving-style analysis to earn a discount on car insurance.</p>
                                 <ul class="mb-0">
-                                    <li>Sensor handling (accelerometer, compass, GPS)</li>
-                                    <li>Secured connection (SSL/TLS certificates, gateway) and REST APIs with Retrofit</li>
-                                    <li>Automatic trip start/stop detection</li>
-                                    <li>Emergency assistance call, free trial, multi-user support</li>
+                                    <li>Automatic trip detection using device sensors (GPS, accelerometer, compass)</li>
+                                    <li>REST API integration (Retrofit) and secure communication (SSL/TLS certificates)</li>
+                                    <li>Key features: driving statistics, emergency assistance call, vehicle location, multi-user support</li>
                                 </ul>
                             </div>
                         </div>
@@ -264,7 +314,7 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
                             <h3 class="mb-0"><span class="lang-fr">Développeur logiciel</span><span class="lang-en">Software Developer</span></h3>
-                            <div class="subheading mb-3">Autoliv · Cergy</div>
+                            <div class="subheading mb-3">Autoliv · Cergy · <span class="lang-fr">Stage</span><span class="lang-en">Internship</span></div>
                             <div class="lang-fr">
                                 <ul class="mb-0">
                                     <li>IHM Java de génération de code embarqué (JSON, C, arxml, binaire Motorola « *.S00 ») ; rédaction d'un plan de test et d'une spécification</li>
@@ -279,6 +329,144 @@
                             </div>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary"><span class="lang-fr">juin 2016 - août 2016</span><span class="lang-en">June 2016 - August 2016</span></span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Projects-->
+            <section class="resume-section" id="projects">
+                <div class="resume-section-content">
+                    <h2 class="mb-5"><span class="lang-fr">Projets</span><span class="lang-en">Projects</span></h2>
+                    <div class="subheading mb-4"><span class="lang-fr">Projets personnels récents</span><span class="lang-en">Recent side projects</span></div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">MoodApp</h3>
+                            <div class="subheading mb-3"><span class="lang-fr">Suivi des émotions et de l'énergie · Android · iOS · Desktop · Web</span><span class="lang-en">Mood and energy tracking · Android · iOS · Desktop · Web</span></div>
+                            <div class="lang-fr">
+                                <p class="mb-2">Application multiplateforme de suivi des émotions et du niveau d'énergie, avec son backend :</p>
+                                <ul class="mb-3">
+                                    <li>Compose Multiplatform en clean architecture, offline-first (SQLDelight + file de synchronisation rejouée avec backoff)</li>
+                                    <li>API GraphQL Node.js (Apollo, Prisma, PostgreSQL) : JWT, rate limiting, chiffrement AES-256-GCM des données personnelles, conformité RGPD (export, effacement, purge planifiée)</li>
+                                    <li>Tests screenshot des écrans, tests unitaires et E2E du backend (Vitest, Testcontainers)</li>
+                                    <li>Auto-hébergée sur Raspberry Pi : image ARM64 publiée par GitHub Actions, scan quotidien des dépendances</li>
+                                    <li>Application traduite en 4 langues</li>
+                                </ul>
+                            </div>
+                            <div class="lang-en">
+                                <p class="mb-2">Cross-platform app for tracking emotions and energy levels, with its own backend:</p>
+                                <ul class="mb-3">
+                                    <li>Compose Multiplatform with clean architecture, offline-first (SQLDelight + sync outbox replayed with backoff)</li>
+                                    <li>Node.js GraphQL API (Apollo, Prisma, PostgreSQL): JWT, rate limiting, AES-256-GCM encryption of personal data, GDPR compliance (export, erasure, scheduled purge)</li>
+                                    <li>Screenshot tests for every screen, backend unit and E2E tests (Vitest, Testcontainers)</li>
+                                    <li>Self-hosted on a Raspberry Pi: ARM64 image published by GitHub Actions, daily dependency scan</li>
+                                    <li>App localized in 4 languages</li>
+                                </ul>
+                            </div>
+                            <div class="project-shots mb-3">
+                                <img src="assets/img/projects/moodapp-home.webp" width="360" height="760" loading="lazy" alt="MoodApp – accueil / home" />
+                                <img src="assets/img/projects/moodapp-emotions.webp" width="360" height="760" loading="lazy" alt="MoodApp – suivi des émotions / emotion tracking" />
+                                <img src="assets/img/projects/moodapp-energy-dark.webp" width="360" height="760" loading="lazy" alt="MoodApp – suivi de l'énergie, thème sombre / energy tracking, dark theme" />
+                            </div>
+                            <p class="small text-muted mb-0">Kotlin · Compose Multiplatform · Ktor · Koin · SQLDelight · Node.js · GraphQL · Prisma · PostgreSQL · Docker · GitHub Actions</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><span class="lang-fr">2026 - aujourd'hui</span><span class="lang-en">2026 - Present</span></span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Maudio</h3>
+                            <div class="subheading mb-3"><span class="lang-fr">Lecteur multimédia · Android · macOS</span><span class="lang-en">Media player · Android · macOS</span></div>
+                            <div class="lang-fr">
+                                <p class="mb-2">Lecteur multimédia Compose Multiplatform : découverte de playlists, podcasts, radios en direct et vidéos.</p>
+                                <ul class="mb-3">
+                                    <li>Lecture en arrière-plan avec Media3 / ExoPlayer (session média, notification, contrôles du casque), vlcj sur desktop</li>
+                                    <li>Podcasts : abonnements, reprise de chaque épisode, vitesse de lecture, téléchargement</li>
+                                    <li>File de lecture réordonnable, minuteur de sommeil, restauration de la session au lancement</li>
+                                    <li>Intégration macOS : touches média et widget « En cours de lecture »</li>
+                                </ul>
+                            </div>
+                            <div class="lang-en">
+                                <p class="mb-2">Compose Multiplatform media player: playlist discovery, podcasts, live radio and videos.</p>
+                                <ul class="mb-3">
+                                    <li>Background playback with Media3 / ExoPlayer (media session, notification, headset controls), vlcj on desktop</li>
+                                    <li>Podcasts: subscriptions, per-episode resume, playback speed, downloads</li>
+                                    <li>Reorderable queue, sleep timer, session restored on launch</li>
+                                    <li>macOS integration: media keys and the "Now Playing" widget</li>
+                                </ul>
+                            </div>
+                            <div class="project-shots mb-3">
+                                <img src="assets/img/projects/maudio-radio.webp" width="360" height="760" loading="lazy" alt="Maudio – radios en direct / live radio" />
+                                <img src="assets/img/projects/maudio-player.webp" width="360" height="760" loading="lazy" alt="Maudio – lecteur / player" />
+                            </div>
+                            <p class="small text-muted mb-0">Kotlin · Compose Multiplatform · Media3 / ExoPlayer · vlcj · Koin · Room · Coil</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><span class="lang-fr">2026 - aujourd'hui</span><span class="lang-en">2026 - Present</span></span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Cheminium</h3>
+                            <div class="subheading mb-3"><span class="lang-fr">Cheminée connectée en LEGO · Android</span><span class="lang-en">Connected LEGO fireplace · Android</span></div>
+                            <div class="lang-fr">
+                                <p class="mb-2">Une tablette Android recyclée, intégrée dans une cheminée en LEGO : feu de cheminée en boucle, aquarium, lecteur vidéo et radio, pilotés à distance depuis un téléphone.</p>
+                                <ul class="mb-3">
+                                    <li>App tablette en mode kiosque : plein écran, démarrage au boot, écran maintenu allumé, verrouillage automatique</li>
+                                    <li>Télécommande Android en Bluetooth (RFCOMM) : protocole texte partagé, reconnexion automatique, état synchronisé (volume, luminosité, vidéo, radio, batterie)</li>
+                                    <li>Vidéo et radio en streaming avec Media3 / ExoPlayer, reprise sur coupure réseau</li>
+                                    <li>Une seule base de code, de la tablette sous Android 7 aux téléphones récents</li>
+                                </ul>
+                            </div>
+                            <div class="lang-en">
+                                <p class="mb-2">A recycled Android tablet built into a LEGO fireplace: looping fire, aquarium, video and radio player, all remote-controlled from a phone.</p>
+                                <ul class="mb-3">
+                                    <li>Kiosk-mode tablet app: full screen, starts on boot, keeps the screen on, auto-lock</li>
+                                    <li>Bluetooth (RFCOMM) Android remote: shared text protocol, automatic reconnection, synced state (volume, brightness, video, radio, battery)</li>
+                                    <li>Video and radio streaming with Media3 / ExoPlayer, recovery after network loss</li>
+                                    <li>One codebase, from the Android 7 tablet to recent phones</li>
+                                </ul>
+                            </div>
+                            <div class="project-shots landscape mb-3">
+                                <img src="assets/img/projects/cheminium-fire.webp" width="720" height="450" loading="lazy" alt="Cheminium – feu de cheminée en plein écran / full-screen fireplace" />
+                                <img src="assets/img/projects/cheminium-drawer.webp" width="720" height="450" loading="lazy" alt="Cheminium – tiroir de réglages / settings drawer" />
+                            </div>
+                            <p class="small text-muted mb-0">Kotlin · Media3 / ExoPlayer · Bluetooth RFCOMM · Foreground services · LEGO</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2026</span></div>
+                    </div>
+                    <div class="subheading mb-4"><span class="lang-fr">Projets précédents</span><span class="lang-en">Earlier projects</span></div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Claudio</h3>
+                            <div class="lang-fr"><p class="mb-1">« Media box » pour envoyer des sons, des vidéos ou des messages en synthèse vocale sur les téléphones de ses amis via Firebase Cloud Messaging. Compose Multiplatform (Android, iOS, Desktop, Web).</p></div>
+                            <div class="lang-en"><p class="mb-1">A "media box" that plays sounds, videos or text-to-speech messages on friends' phones through Firebase Cloud Messaging. Compose Multiplatform (Android, iOS, Desktop, Web).</p></div>
+                            <a href="https://github.com/GuillaumeMuret/claudio-app" target="_blank" rel="noopener"><i class="fab fa-github"></i> claudio-app</a>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2023 - 2025</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">PosterMaster</h3>
+                            <div class="lang-fr"><p class="mb-1">Application Android pour l'ESEO : notation des posters de projets de fin d'études par les membres du jury, et mise en valeur des travaux des étudiants lors des journées portes ouvertes.</p></div>
+                            <div class="lang-en"><p class="mb-1">Android app for ESEO: jury members grade final-year project posters, and students' work is showcased during open days.</p></div>
+                            <a href="https://github.com/GuillaumeMuret/PosterMaster" target="_blank" rel="noopener"><i class="fab fa-github"></i> PosterMaster</a>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2018</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Virtual Keyboard</h3>
+                            <div class="lang-fr"><p class="mb-1">Clavier virtuel Android configurable pour Limagrain : nombre, taille et action des touches, couleurs, police, icônes, multilingue, import/export de configuration.</p></div>
+                            <div class="lang-en"><p class="mb-1">Configurable Android virtual keyboard for Limagrain: number, size and action of keys, colors, font, icons, multi-language, configuration import/export.</p></div>
+                            <a href="https://github.com/GuillaumeMuret/FieldKeyboard" target="_blank" rel="noopener"><i class="fab fa-github"></i> FieldKeyboard</a>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2017</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">ThingyProve</h3>
+                            <div class="lang-fr"><p class="mb-1">Banc de test domotique, en équipe de 8 avec la société GCE Electronics : application Android et module C sur Raspberry Pi, spécifications, conception, tests unitaires et d'intégration.</p></div>
+                            <div class="lang-en"><p class="mb-1">Home automation test bench, in a team of 8 with GCE Electronics: Android app and C module on a Raspberry Pi, specifications, design, unit and integration testing.</p></div>
+                            <a href="https://github.com/GuillaumeMuret/ThingyProve" target="_blank" rel="noopener"><i class="fab fa-github"></i> ThingyProve</a>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2016</span></div>
                     </div>
                 </div>
             </section>
@@ -306,7 +494,7 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">ESAI Shanghai</h3>
-                            <div class="subheading mb-3"><span class="lang-fr">Semestre d'échange</span><span class="lang-en">Exchange semester</span></div>
+                            <div class="subheading mb-3"><span class="lang-fr">Séjour d'études de 9 semaines</span><span class="lang-en">9-week study program</span></div>
                             <div><span class="lang-fr">Informatique (projet en langage C), culture et business chinois, mandarin</span><span class="lang-en">Computer science (C language project), Chinese culture and business, Mandarin</span></div>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">2014</span></div>
@@ -314,7 +502,7 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">University of Plymouth</h3>
-                            <div class="subheading mb-3"><span class="lang-fr">Semestre d'échange</span><span class="lang-en">Exchange semester</span></div>
+                            <div class="subheading mb-3"><span class="lang-fr">Séjour d'études d'un mois</span><span class="lang-en">1-month study program</span></div>
                             <div>Software and Hardware</div>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">2013</span></div>
@@ -327,7 +515,7 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5"><span class="lang-fr">Compétences</span><span class="lang-en">Skills</span></h2>
                     <div class="subheading mb-3"><span class="lang-fr">Langages &amp; frameworks</span><span class="lang-en">Languages &amp; frameworks</span></div>
-                    <p>Kotlin · Compose Multiplatform · Java · Coroutines / Flow · Koin / Hilt · Retrofit / Ktor · Room / SQLDelight · Clean Architecture / MVVM · Node · Bash · Groovy</p>
+                    <p>Kotlin · Jetpack Compose · Compose Multiplatform · Java · Coroutines / Flow · Koin / Hilt · Retrofit / Ktor · Room / SQLDelight · Clean Architecture / MVVM · Node · Bash · Groovy</p>
                     <div class="subheading mb-3"><span class="lang-fr">Outils &amp; plateformes</span><span class="lang-en">Tools &amp; platforms</span></div>
                     <ul class="list-inline dev-icons">
                         <li class="list-inline-item" title="Android"><i class="fab fa-android"></i></li>
@@ -347,7 +535,7 @@
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-robot"></i></span>
-                            <span class="lang-fr">Développement assisté par IA : Claude Code au quotidien (notamment chez manager.one)</span><span class="lang-en">AI-assisted development: Claude Code daily (notably at manager.one)</span>
+                            <span class="lang-fr">IA générative : outillage Claude Code (skills, agents, hooks), revue de MR multi-agents, avant-vente assistée par IA</span><span class="lang-en">Generative AI: Claude Code tooling (skills, agents, hooks), multi-agent MR review, AI-assisted pre-sales</span>
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
